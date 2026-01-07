@@ -39,7 +39,7 @@ The application is built on a **Spring Framework–based backend** with a hybrid
 ## 🛠 Tech Stack
 
 ### Backend
-- **Java 11 / Java 17**
+- **Java 11**
 - **Spring Framework 5.x** (MVC, DI, Scheduling)
 - **Hibernate 5.x** (ORM & Database Abstraction)
 - **Apache POI** (Excel Processing)
@@ -52,7 +52,7 @@ The application is built on a **Spring Framework–based backend** with a hybrid
 ### Infrastructure & Tools
 - **Ubuntu 22.04 / 24.04 LTS** (Host OS)
 - **Node.js & Puppeteer** (Headless Browser for PDF Generation)
-- **MySQL 8.x** (Relational Database)
+- **MySQL 5.x** (Relational Database)
 - **Maven** (Build Management)
 
 ---
