@@ -91,7 +91,7 @@ The application is built on a **Spring Framework–based backend** with a hybrid
 
 ```bash
 sudo apt update
-sudo apt install -y openjdk-17-jdk maven nodejs npm mysql-server
+sudo apt install -y openjdk-11-jdk maven nodejs npm mysql-server
 ```
 
 ---
