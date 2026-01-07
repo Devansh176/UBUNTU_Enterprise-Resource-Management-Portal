@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mednet Training Assignment</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/resources/css/ext-all-neptune.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/ext-all.min.js"></script>
+
+        <script src="dwr/engine.js"></script>
+        <script src="dwr/util.js"></script>
+        <script src="dwr/interface/PatientController.js"></script>
+    </head>
+
+    <body>
+
+    <h2>Mednet Assignment</h2>
+
+    <div class="tabs">
+        <div class="tab" onclick="showTab('tab1')">Drop Down</div>
+        <div class="tab" onclick="showTab('tab2')">Pop-up</div>
+        <div class="tab" onclick="showTab('tab3')">List</div>
+        <div class="tab" onclick="showTab('tab4')">Entry Screen</div>
+        <div class="tab" onclick="showTab('tab5'); if(window.initTab5) initTab5();">Excel Upload & Download</div>
+        <div class="tab" onclick="showTab('tab6'); if(window.initTab6) initTab6();">Web Service</div>
+        <div class="tab" onclick="showTab('tab7'); if(window.initTab7) initTab7();">Puppeteer PDF</div>
+        <div class="tab" onclick="showTab('tab8'); if(window.initTab8) initTab8();">Cron Job Scheduling</div>
+    </div>
+
+
+    <div id="tab1" class="content" style="display:block;">
+        <div class="section-title">
+        Tab 1 : HTML Select & ExtJs Dropdown Screen
+        </div>
+    </div>
+
+
+    <div id="tab2" class="content">
+        <div class="section-title">
+            Tab 2 : Popup Screen
+        </div>
+
+        <button class="primary-btn" onclick="openEditorPopup()">Patient Details</button>
+    </div>
+
+
+    <div id="tab3" class="content">
+        <div class="section-title">
+            TAB - 3 : List Screen
+        </div>
+        <div id="grid-container"></div>
+    </div>
+
+    <div id="tab4" class="content">
+        <div class="section-title">
+            Tab 4 : Entry Screen
+        </div>
+        <div id="tab4-container"></div>
+    </div>
+
+
+    <div id="tab5" class="content">
+        <div id="tab5-container"></div>
+    </div>
+
+
+    <div id="tab6" class="content">
+        <div id="tab6-container"></div>
+    </div>
+
+
+    <div id="tab7" class="content">
+        <div id="tab7-container"></div>
+    </div>
+
+    <div id="tab8" class="content">
+        <div id="tab8-container"></div>
+    </div>
+
+    <script src="js/tabs.js"></script>
+
+    </body>
+</html>

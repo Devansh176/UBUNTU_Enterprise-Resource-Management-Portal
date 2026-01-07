@@ -1,0 +1,19 @@
+<!DOCTYPE dwr PUBLIC
+        "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+        "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+    <allow>
+        <create creator="spring" javascript="PatientController">
+            <param name="beanName" value="patientController"/>
+        </create>
+        <convert converter="enum" match="patient.entity.genderType.GenderTypes"/>
+        <!-- convert converter="bean" match="patient.entity.prefixType.PrefixTypes"/ -->
+        <convert converter="enum" match="patient.entity.prefixType.PrefixTypes"/>
+        <convert converter="bean" match="patient.entity.Patient"/>
+
+        <convert converter="bean" match="patient.entity.titleType.TitleType">
+            <param name="exclude" value="class, declaringClass"/>
+        </convert>
+    </allow>
+</dwr>
